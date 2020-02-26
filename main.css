@@ -1,0 +1,144 @@
+
+* {margin: 0; padding: 0;}
+* {box-sizing:border-box}
+.posuvnik {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding: 2%;
+}
+
+.slide {
+  display: none;
+  background-color: rgba(255,255,0, 0.5);
+}
+
+.tck {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .tck:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+a {text-decoration: none;}
+
+
+body {
+  text-align: center;
+  color: black;
+	font-family: 'Poppins', ;
+	font-size: 18px;
+}
+h2{
+	color: #79BEEE;
+
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-style: none none solid none;
+  border-color: #79BEEE;
+}
+h1{
+	color: #020887;
+  margin-left: 2%;
+
+
+
+}
+@font-face {
+    font-family: 'open-sans-bold';
+	src: url('../fonts/open-sans/OpenSans-Bold.eot');
+    src: url('../fonts/open-sans/OpenSans-Bold.eot?iefix') format('embedded-opentype'),
+		 url('../fonts/open-sans/OpenSans-Bold.ttf');
+    font-weight: normal;
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	background: #ADD8E6;
+  color: black;
+}
+
+nav li {
+	display: inline-block;
+	padding: 24px 10px;
+}
+
+nav li a {
+	color: #757575;
+	text-transform: uppercase;
+}
+
+
+
+@media only screen and (max-width: 520px) {
+
+	nav li {
+		padding: 24px 4px;
+	}
+
+	nav li a {
+		font-size: 14px;
+	}
+
+}
+/*
+  sem je navigace
+*/
+
+
+/*
+  sem je sipka nahoru
+*/
+p{
+		background-color: red;
+}
+
+article{
+	width: 80%;
+	text-align: justify;
+	margin-left: 10%;
+	margin-right:10%;
+
+}
+
+section{
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+footer{
+  padding-top: 1%;
+	background-color: rgba(173, 216, 230, 0.5);
+  text-align:left;
+  padding-bottom: 1%;
+  padding-left: 3%;
+}
